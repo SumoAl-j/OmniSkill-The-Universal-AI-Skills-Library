@@ -1,0 +1,62 @@
+[
+  {
+    "name": "DEBUGGING",
+    "path": "core\\DEBUGGING.skill.md",
+    "content": "---\nname: DEBUGGING\nversion: 0.1.0\ncategory: core\npriority: normal\n---\n\n# DEBUGGING\n\n# Objective\n\nDescribe the purpose of this Skill.\n\n# Activation\n\nWhen should this Skill be activated?\n\n# Workflow\n\n1.\n2.\n3.\n\n# Examples\n\n## Example 1\n\n...\n\n# Validation\n\n- [ ]\n\n# Related Skills\n\n-\n"
+  },
+  {
+    "name": "DECISION",
+    "path": "core\\DECISION.skill.md",
+    "content": "---\nname: DECISION\nversion: 0.1.0\ncategory: core\npriority: normal\n---\n\n# DECISION\n\n# Objective\n\nDescribe the purpose of this Skill.\n\n# Activation\n\nWhen should this Skill be activated?\n\n# Workflow\n\n1.\n2.\n3.\n\n# Examples\n\n## Example 1\n\n...\n\n# Validation\n\n- [ ]\n\n# Related Skills\n\n-\n"
+  },
+  {
+    "name": "DOCUMENTATION",
+    "path": "core\\DOCUMENTATION.skill.md",
+    "content": "---\nname: DOCUMENTATION\nversion: 0.1.0\ncategory: core\npriority: normal\n---\n\n# DOCUMENTATION\n\n# Objective\n\nDescribe the purpose of this Skill.\n\n# Activation\n\nWhen should this Skill be activated?\n\n# Workflow\n\n1.\n2.\n3.\n\n# Examples\n\n## Example 1\n\n...\n\n# Validation\n\n- [ ]\n\n# Related Skills\n\n-\n"
+  },
+  {
+    "name": "MASTER",
+    "path": "core\\MASTER.skill.md",
+    "content": "---\r\nname: MASTER\r\nversion: 0.1.0\r\ncategory: core\r\npriority: critical\r\nalwaysApply: true\r\n\r\ncompatible:\r\n  - ChatGPT\r\n  - Claude\r\n  - Gemini\r\n  - Cursor\r\n  - GitHub Copilot\r\n  - Cline\r\n\r\ndescription: Universal routing and quality-control skill.\r\n---\r\n\r\n# MASTER\r\n\r\n# Objective\r\n\r\nMASTER is the root skill.\r\n\r\nEvery task should pass through MASTER before any other skill is activated.\r\n\r\nMASTER never solves the task directly unless no specialized skill exists.\r\n\r\nIts responsibility is to understand the objective, activate the correct skills, verify quality, and ensure the final answer meets OmniSkill standards.\r\n\r\n# Responsibilities\r\n\r\nMASTER must:\r\n\r\n- Understand the user's real objective.\r\n- Identify missing information.\r\n- Break large tasks into smaller phases.\r\n- Select the appropriate Skills.\r\n- Review the final result.\r\n- Improve weak outputs before delivering.\r\n\r\n# Priority\r\n\r\nAlways prioritize:\r\n\r\n1. Correctness\r\n2. Security\r\n3. Maintainability\r\n4. Simplicity\r\n5. Performance\r\n6. User value\r\n7. Speed\r\n\r\nNever sacrifice correctness for speed.\r\n\r\n# Task Classification\r\n\r\nClassify every task before doing any work.\r\n\r\nPossible categories:\r\n\r\n- Coding\r\n- Design\r\n- AI\r\n- Cybersecurity\r\n- Research\r\n- Documentation\r\n- Business\r\n- Planning\r\n- Learning\r\n- General\r\n\r\n# Skill Routing\r\n\r\nExamples:\r\n\r\nReact application\r\n\r\n↓\r\n\r\nReact.skill\r\n\r\nTypeScript.skill\r\n\r\nSecurity.skill\r\n\r\nReview.skill\r\n\r\nBug fixing\r\n\r\n↓\r\n\r\nDebugging.skill\r\n\r\nReview.skill\r\n\r\nTesting.skill\r\n\r\nUI Design\r\n\r\n↓\r\n\r\nUI.skill\r\n\r\nUX.skill\r\n\r\nAccessibility.skill\r\n\r\nSecurity Assessment\r\n\r\n↓\r\n\r\nResearch.skill\r\n\r\nCybersecurity.skill\r\n\r\nReview.skill\r\n\r\n# Thinking Process\r\n\r\nBefore answering ask internally:\r\n\r\n- What does the user actually want?\r\n- What assumptions exist?\r\n- What information is missing?\r\n- Can this answer be improved?\r\n- Which Skills should be activated?\r\n\r\n# Large Tasks\r\n\r\nIf the task is large:\r\n\r\n- Split it into phases.\r\n- Each phase should have one objective.\r\n- Produce one deliverable.\r\n- Be independently verifiable.\r\n\r\n# Research Rules\r\n\r\nSeparate:\r\n\r\n- Facts\r\n- Assumptions\r\n- Unknowns\r\n- Opinions\r\n\r\nNever present assumptions as facts.\r\n\r\n# Coding Rules\r\n\r\nPrefer:\r\n\r\n- Readable code\r\n- Maintainable code\r\n- Correct code\r\n- Reusable code\r\n- Optimized code\r\n\r\n# Review Checklist\r\n\r\nBefore finishing verify:\r\n\r\n- Objective achieved\r\n- Technically correct\r\n- Secure\r\n- Easy to understand\r\n- Edge cases considered\r\n- Good structure\r\n- No hallucinations\r\n- Practical\r\n\r\n# Failure Handling\r\n\r\nIf required information is missing:\r\n\r\n- Explain what is missing.\r\n- Explain why it matters.\r\n- Continue as far as possible without inventing facts.\r\n\r\n# Activation\r\n\r\nAlways activate before any other Skill.\r\n\r\n# Workflow\r\n\r\n1. Understand the request.\r\n2. Classify the task.\r\n3. Select the required Skills.\r\n4. Execute the Skills.\r\n5. Review the result.\r\n6. Deliver the final answer.\r\n\r\n# Examples\r\n\r\n## Example 1\r\n\r\n**User:** Build a React application.\r\n\r\n**Activated Skills:**\r\n\r\n- ROUTER\r\n- RESEARCH\r\n- REVIEW\r\n\r\n# Validation\r\n\r\n- Objective achieved\r\n- Correct Skill selected\r\n- Output reviewed\r\n- No hallucinations\r\n\r\n# Related Skills\r\n\r\n- ROUTER.skill.md\r\n- THINKING.skill.md\r\n- PLANNING.skill.md\r\n- DEBUGGING.skill.md\r\n- RESEARCH.skill.md\r\n- REVIEW.skill.md\r\n- DOCUMENTATION.skill.md\r\n- SECURITY.skill.md\r\n\r\nEnd of Skill."
+  },
+  {
+    "name": "MEMORY",
+    "path": "core\\MEMORY.skill.md",
+    "content": "---\nname: MEMORY\nversion: 0.1.0\ncategory: core\npriority: normal\n---\n\n# MEMORY\n\n# Objective\n\nDescribe the purpose of this Skill.\n\n# Activation\n\nWhen should this Skill be activated?\n\n# Workflow\n\n1.\n2.\n3.\n\n# Examples\n\n## Example 1\n\n...\n\n# Validation\n\n- [ ]\n\n# Related Skills\n\n-\n"
+  },
+  {
+    "name": "PLANNING",
+    "path": "core\\PLANNING.skill.md",
+    "content": "---\nname: PLANNING\nversion: 0.1.0\ncategory: core\npriority: normal\n---\n\n# PLANNING\n\n# Objective\n\nDescribe the purpose of this Skill.\n\n# Activation\n\nWhen should this Skill be activated?\n\n# Workflow\n\n1.\n2.\n3.\n\n# Examples\n\n## Example 1\n\n...\n\n# Validation\n\n- [ ]\n\n# Related Skills\n\n-\n"
+  },
+  {
+    "name": "QUALITY",
+    "path": "core\\QUALITY.skill.md",
+    "content": "---\nname: QUALITY\nversion: 0.1.0\ncategory: core\npriority: normal\n---\n\n# QUALITY\n\n# Objective\n\nDescribe the purpose of this Skill.\n\n# Activation\n\nWhen should this Skill be activated?\n\n# Workflow\n\n1.\n2.\n3.\n\n# Examples\n\n## Example 1\n\n...\n\n# Validation\n\n- [ ]\n\n# Related Skills\n\n-\n"
+  },
+  {
+    "name": "RESEARCH",
+    "path": "core\\RESEARCH.skill.md",
+    "content": "---\nname: RESEARCH\nversion: 0.1.0\ncategory: core\npriority: normal\n---\n\n# RESEARCH\n\n# Objective\n\nDescribe the purpose of this Skill.\n\n# Activation\n\nWhen should this Skill be activated?\n\n# Workflow\n\n1.\n2.\n3.\n\n# Examples\n\n## Example 1\n\n...\n\n# Validation\n\n- [ ]\n\n# Related Skills\n\n-\n"
+  },
+  {
+    "name": "REVIEW",
+    "path": "core\\REVIEW.skill.md",
+    "content": "---\nname: REVIEW\nversion: 0.1.0\ncategory: core\npriority: normal\n---\n\n# REVIEW\n\n# Objective\n\nDescribe the purpose of this Skill.\n\n# Activation\n\nWhen should this Skill be activated?\n\n# Workflow\n\n1.\n2.\n3.\n\n# Examples\n\n## Example 1\n\n...\n\n# Validation\n\n- [ ]\n\n# Related Skills\n\n-\n"
+  },
+  {
+    "name": "ROUTER",
+    "path": "core\\ROUTER.skill.md",
+    "content": "---\r\nname: ROUTER\r\nversion: 0.1.0\r\ncategory: core\r\npriority: critical\r\nalwaysApply: true\r\n\r\ncompatible:\r\n  - ChatGPT\r\n  - Claude\r\n  - Gemini\r\n  - Cursor\r\n  - GitHub Copilot\r\n  - Cline\r\n\r\ndescription: Routes every request to the correct Skills.\r\n---\r\n\r\n# ROUTER\r\n\r\n# Objective\r\n\r\nDetermine which Skills should be activated for the current task.\r\n\r\n# Activation\r\n\r\nActivate after MASTER analyzes the request.\r\n\r\n# Workflow\r\n\r\n1. Read the user's request.\r\n2. Determine the task category.\r\n3. Select the required Skills.\r\n4. Return the ordered Skill list.\r\n\r\n# Examples\r\n\r\n## Example 1\r\n\r\nUser: Create a React dashboard.\r\n\r\nActivated Skills:\r\n\r\n- React\r\n- TypeScript\r\n- Review\r\n\r\n# Validation\r\n\r\n- Correct Skills selected.\r\n- No unnecessary Skills included.\r\n- Task classified correctly.\r\n\r\n# Related Skills\r\n\r\n- MASTER.skill.md\r\n- THINKING.skill.md\r\n- REVIEW.skill.md\r\n\r\nEnd of Skill."
+  },
+  {
+    "name": "THINKING",
+    "path": "core\\THINKING.skill.md",
+    "content": "---\nname: THINKING\nversion: 0.1.0\ncategory: core\npriority: normal\n---\n\n# THINKING\n\n# Objective\n\nDescribe the purpose of this Skill.\n\n# Activation\n\nWhen should this Skill be activated?\n\n# Workflow\n\n1.\n2.\n3.\n\n# Examples\n\n## Example 1\n\n...\n\n# Validation\n\n- [ ]\n\n# Related Skills\n\n-\n"
+  },
+  {
+    "name": "VALIDATION",
+    "path": "core\\VALIDATION.skill.md",
+    "content": "---\nname: VALIDATION\nversion: 0.1.0\ncategory: core\npriority: normal\n---\n\n# VALIDATION\n\n# Objective\n\nDescribe the purpose of this Skill.\n\n# Activation\n\nWhen should this Skill be activated?\n\n# Workflow\n\n1.\n2.\n3.\n\n# Examples\n\n## Example 1\n\n...\n\n# Validation\n\n- [ ]\n\n# Related Skills\n\n-\n"
+  }
+]

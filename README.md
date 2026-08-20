@@ -1,2 +1,21 @@
 # OmniSkill
-Universal AI Skills Library for ChatGPT, Claude, Gemini, Cursor, Copilot and AI Agents.
+
+## Categories
+
+- core (12)
+
+## core
+
+- DEBUGGING
+- DECISION
+- DOCUMENTATION
+- MASTER
+- MEMORY
+- PLANNING
+- QUALITY
+- RESEARCH
+- REVIEW
+- ROUTER
+- THINKING
+- VALIDATION
+

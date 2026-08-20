@@ -1,0 +1,54 @@
+{
+  "name": "omniskill-the-universal-ai-skills-library",
+  "version": "1.0.0",
+  "description": "Universal AI Skills Library for ChatGPT, Claude, Gemini, Cursor, Copilot and AI Agents.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
+  },
+  "scripts": {
+    "create": "tsx scripts/create-skill.ts",
+    "validate": "tsx scripts/validate-skills.ts",
+    "fix": "tsx scripts/fix-skills.ts",
+    "search": "tsx scripts/search-skills.ts",
+    "update": "tsx scripts/update-skill.ts",
+    "delete": "tsx scripts/delete-skill.ts",
+    "export": "tsx scripts/export-skills.ts",
+    "import": "tsx scripts/import-skills.ts",
+    "stats": "tsx scripts/stats-skills.ts",
+    "clone": "tsx scripts/clone-skill.ts",
+    "duplicate-check": "tsx scripts/duplicate-check.ts",
+    "health": "tsx scripts/health-check.ts",
+    "docs": "tsx scripts/build-docs.ts",
+    "release": "tsx scripts/new-release.ts",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SumoAl-j/OmniSkill-The-Universal-AI-Skills-Library.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SumoAl-j/OmniSkill-The-Universal-AI-Skills-Library/issues"
+  },
+  "homepage": "https://github.com/SumoAl-j/OmniSkill-The-Universal-AI-Skills-Library#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.1.2",
+    "@typescript-eslint/eslint-plugin": "^8.67.0",
+    "@typescript-eslint/parser": "^8.67.0",
+    "eslint": "^10.8.0",
+    "prettier": "^3.9.6",
+    "tsx": "^4.23.6",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@clack/prompts": "^1.7.0",
+    "picocolors": "^1.1.1"
+  }
+}
