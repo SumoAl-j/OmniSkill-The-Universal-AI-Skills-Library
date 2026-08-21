@@ -2,7 +2,7 @@
 
 ## Categories
 
-- core (16)
+- core (17)
 
 ## core
 
@@ -20,6 +20,7 @@
 - VALIDATION
 - architecture
 - coding
+- git
 - security
 - testing
 
