@@ -2,7 +2,7 @@
 
 ## Categories
 
-- core (12)
+- core (16)
 
 ## core
 
@@ -18,4 +18,8 @@
 - ROUTER
 - THINKING
 - VALIDATION
+- architecture
+- coding
+- security
+- testing
 
