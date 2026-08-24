@@ -64,6 +64,13 @@ name: ${skillName}
 version: 0.1.0
 category: ${category}
 priority: normal
+compatible:
+  - ChatGPT
+  - Claude
+  - Gemini
+  - Cursor
+  - GitHub Copilot
+  - Cline
 ---
 
 # Objective

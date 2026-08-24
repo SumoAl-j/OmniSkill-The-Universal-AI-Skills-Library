@@ -58,6 +58,7 @@ for (const file of skillFiles) {
     "version:",
     "category:",
     "priority:",
+    "compatible:",
   ];
 
   for (const item of metadata) {

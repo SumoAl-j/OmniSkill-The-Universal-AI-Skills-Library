@@ -27,11 +27,13 @@ Activate THINKING when:
 
 - A problem is complex or ambiguous.
 - Multiple explanations are possible.
-- A technical decision requires reasoning.
 - Requirements are incomplete.
 - Evidence must be evaluated.
 - A solution needs to be derived rather than recalled.
 - Important assumptions could affect the result.
+- The answer or cause is not yet known and must be reasoned out.
+
+THINKING is about deriving, analyzing, and reasoning toward an answer when the answer is not already known.
 
 ## Workflow
 

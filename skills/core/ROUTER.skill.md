@@ -3,7 +3,7 @@ name: ROUTER
 version: 1.0.0
 category: core
 priority: high
-alwaysApply: true
+alwaysApply: false
 compatible:
   - ChatGPT
   - Claude
@@ -92,7 +92,7 @@ For example:
 1. RESEARCH
 2. DECISION
 3. PLANNING
-4. Implementation
+4. CODING
 5. REVIEW
 6. VALIDATION
 
@@ -148,9 +148,10 @@ ROUTER should select:
 1. PLANNING
 2. THINKING
 3. DECISION when architectural choices are required.
-4. REVIEW
-5. QUALITY
-6. VALIDATION
+4. CODING
+5. REVIEW
+6. QUALITY
+7. VALIDATION
 
 Only activate Skills that are actually needed.
 

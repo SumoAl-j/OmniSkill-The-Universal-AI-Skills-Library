@@ -1,6 +1,6 @@
 ---
 name: MASTER
-version: 0.1.0
+version: 1.0.0
 category: core
 priority: critical
 alwaysApply: true
@@ -78,43 +78,55 @@ React application
 
 ↓
 
-React.skill
+CODING.skill.md
 
-TypeScript.skill
+ARCHITECTURE.skill.md
 
-Security.skill
+SECURITY.skill.md
 
-Review.skill
+REVIEW.skill.md
 
 Bug fixing
 
 ↓
 
-Debugging.skill
+DEBUGGING.skill.md
 
-Review.skill
+REVIEW.skill.md
 
-Testing.skill
+TESTING.skill.md
 
 UI Design
 
 ↓
 
-UI.skill
+UX_UI.skill.md
 
-UX.skill
+RESEARCH.skill.md
 
-Accessibility.skill
+REVIEW.skill.md
 
 Security Assessment
 
 ↓
 
-Research.skill
+RESEARCH.skill.md
 
-Cybersecurity.skill
+SECURITY.skill.md
 
-Review.skill
+REVIEW.skill.md
+
+# MASTER → ROUTER Relationship
+
+MASTER is the always-on root orchestrator. Every task passes through MASTER first.
+
+MASTER's responsibilities include understanding the objective, breaking tasks into phases, and selecting the appropriate Skills.
+
+ROUTER is invoked by MASTER when skill selection or multi-skill coordination is needed. ROUTER selects and coordinates the smallest relevant set of Skills for a task.
+
+When a task is simple and a single Skill clearly applies, MASTER may activate that Skill directly.
+
+When a task spans multiple technical areas or the correct workflow is not obvious, MASTER activates ROUTER to select and coordinate the appropriate Skills.
 
 # Thinking Process
 

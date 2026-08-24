@@ -25,13 +25,15 @@ DECISION should prioritize the option that best satisfies the actual objective r
 
 Activate DECISION when:
 
-- Multiple valid approaches exist.
+- Multiple valid alternatives already exist.
 - The user asks which option is better.
-- A technical or architectural choice must be made.
+- A technical or architectural choice must be made between known options.
 - Tools, frameworks, libraries, platforms, or strategies need to be compared.
 - There are meaningful trade-offs between cost, security, performance, simplicity, or maintainability.
 - The best choice depends on project requirements or constraints.
 - A decision could materially affect the project.
+
+DECISION is about choosing between known alternatives and evaluating their trade-offs. Use THINKING when the alternatives or the reasoning itself still need to be derived.
 
 ## Workflow
 
