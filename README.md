@@ -2,7 +2,7 @@
 
 ## Categories
 
-- core (25)
+- core (26)
 
 ## core
 
@@ -20,6 +20,7 @@
 - VALIDATION
 - api
 - architecture
+- caching
 - coding
 - configuration
 - database
