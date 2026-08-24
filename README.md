@@ -2,7 +2,7 @@
 
 ## Categories
 
-- core (26)
+- core (27)
 
 ## core
 
@@ -24,6 +24,7 @@
 - coding
 - configuration
 - database
+- dependencies
 - deployment
 - error_handling
 - git
