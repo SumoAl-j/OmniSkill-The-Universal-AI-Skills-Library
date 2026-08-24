@@ -2,7 +2,7 @@
 
 ## Categories
 
-- core (28)
+- core (29)
 
 ## core
 
@@ -31,6 +31,7 @@
 - observability
 - performance
 - reliability
+- scalability
 - security
 - testing
 - ux_ui
