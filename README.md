@@ -2,7 +2,7 @@
 
 ## Categories
 
-- core (20)
+- core (21)
 
 ## core
 
@@ -24,6 +24,7 @@
 - database
 - deployment
 - git
+- performance
 - security
 - testing
 
