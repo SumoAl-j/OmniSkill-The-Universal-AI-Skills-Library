@@ -2,7 +2,7 @@
 
 ## Categories
 
-- core (21)
+- core (22)
 
 ## core
 
@@ -27,4 +27,5 @@
 - performance
 - security
 - testing
+- ux_ui
 
