@@ -2,7 +2,7 @@
 
 ## Categories
 
-- core (27)
+- core (28)
 
 ## core
 
@@ -30,6 +30,7 @@
 - git
 - observability
 - performance
+- reliability
 - security
 - testing
 - ux_ui
