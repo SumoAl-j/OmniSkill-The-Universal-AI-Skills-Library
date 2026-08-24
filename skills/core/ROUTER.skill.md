@@ -87,16 +87,27 @@ Avoid activating every Skill unnecessarily.
 
 If one Skill depends on another, follow the appropriate order.
 
-For example:
+ROUTER does not prescribe a single fixed sequence for all tasks. The correct order depends on the task. Use the general dependency-order model below as a starting point, then adjust based on the actual task.
 
-1. RESEARCH
-2. DECISION
-3. PLANNING
-4. CODING
-5. REVIEW
-6. VALIDATION
+General dependency-order model:
 
-Adjust the sequence based on the actual task.
+1. RESEARCH — gather evidence or verify current state when needed.
+2. THINKING — reason about the problem when the answer or approach is not yet clear.
+3. DECISION — choose between known alternatives when multiple valid options exist.
+4. PLANNING — organize the chosen approach into ordered, verifiable steps.
+5. Implementation (e.g. CODING) — carry out the work.
+6. REVIEW — inspect the implementation for defects and security concerns.
+7. QUALITY — assess the result across multiple quality dimensions when appropriate.
+8. VALIDATION — confirm the final result satisfies the original requirements.
+
+Adjust the sequence based on the actual task. For example:
+
+- A simple question may only require RESEARCH and THINKING.
+- A documented decision may require RESEARCH, DECISION, and DOCUMENTATION.
+- A small code change may only require CODING and VALIDATION.
+- A complex feature may require several of these skills.
+
+Do not activate every Skill. Activate the smallest relevant set.
 
 ### 6. Re-route When Necessary
 
@@ -141,19 +152,25 @@ ROUTER should select:
 
 ### Example 2 — Building a New Feature
 
-A user requests a complex feature.
+A user requests a complex feature. ROUTER selects a minimal set of Skills that matches the task, not every available Skill. The actual set depends on the task's scope and risk.
 
-ROUTER should select:
+A typical minimal sequence for a complex feature:
 
-1. PLANNING
-2. THINKING
-3. DECISION when architectural choices are required.
-4. CODING
-5. REVIEW
-6. QUALITY
-7. VALIDATION
+1. RESEARCH if the feature depends on unfamiliar technologies or external APIs.
+2. PLANNING to organize the work into ordered, verifiable steps.
+3. THINKING if the implementation approach is ambiguous.
+4. DECISION when there are meaningful trade-offs to evaluate (architecture, libraries, patterns).
+5. CODING to implement the feature.
+6. VALIDATION to confirm the feature works and the original requirement is satisfied.
 
-Only activate Skills that are actually needed.
+Supporting Skills are added only when they materially improve the result:
+
+- REVIEW when the implementation carries security, correctness, or integration risk.
+- QUALITY when a structured multi-dimensional quality assessment is useful.
+- TESTING when regression coverage is needed.
+- DOCUMENTATION when the feature or decision must be recorded.
+
+A complex feature does not automatically require all seven Skill types. Simple or well-understood features may need only CODING and VALIDATION. ROUTER's job is to select the smallest set that safely satisfies the task.
 
 ### Example 3 — Comparing Technologies
 
@@ -182,6 +199,7 @@ Before completing a routing task, verify:
 - [ ] The primary objective was identified.
 - [ ] Relevant Skills were considered.
 - [ ] A primary Skill was selected.
+- [ ] The primary Skill is actually the most relevant skill for the task, not just a plausible one.
 - [ ] Supporting Skills are actually relevant.
 - [ ] Unnecessary Skills were avoided.
 - [ ] Skill dependencies were considered.
@@ -189,6 +207,8 @@ Before completing a routing task, verify:
 - [ ] Routing can change when the task changes.
 - [ ] The selected workflow matches the actual task.
 - [ ] Final validation is included when appropriate.
+
+When multiple Skills could apply, confirm that the chosen primary Skill best addresses the main objective rather than simply being the first one that came to mind. If the task is ambiguous, prefer THINKING or RESEARCH to reduce uncertainty before committing to a routing decision.
 
 ## Related Skills
 

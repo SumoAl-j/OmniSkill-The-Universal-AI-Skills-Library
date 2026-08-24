@@ -18,7 +18,7 @@ description: Universal routing and quality-control skill.
 
 # MASTER
 
-# Objective
+## Objective
 
 MASTER is the root skill.
 
@@ -27,8 +27,6 @@ Every task should pass through MASTER before any other skill is activated.
 MASTER never solves the task directly unless no specialized skill exists.
 
 Its responsibility is to understand the objective, activate the correct skills, verify quality, and ensure the final answer meets OmniSkill standards.
-
-# Responsibilities
 
 MASTER must:
 
@@ -39,9 +37,7 @@ MASTER must:
 - Review the final result.
 - Improve weak outputs before delivering.
 
-# Priority
-
-Always prioritize:
+MASTER should prioritize:
 
 1. Correctness
 2. Security
@@ -53,7 +49,20 @@ Always prioritize:
 
 Never sacrifice correctness for speed.
 
-# Task Classification
+## Activation
+
+Always activate before any other Skill.
+
+## Workflow
+
+1. Understand the request.
+2. Classify the task.
+3. Select the required Skills.
+4. Execute the Skills.
+5. Review the result.
+6. Deliver the final answer.
+
+### Task Classification
 
 Classify every task before doing any work.
 
@@ -70,9 +79,61 @@ Possible categories:
 - Learning
 - General
 
-# Skill Routing
+### Thinking Process
 
-Examples:
+Before answering ask internally:
+
+- What does the user actually want?
+- What assumptions exist?
+- What information is missing?
+- Can this answer be improved?
+- Which Skills should be activated?
+
+### Large Tasks
+
+If the task is large:
+
+- Split it into phases.
+- Each phase should have one objective.
+- Produce one deliverable.
+- Be independently verifiable.
+
+### Research Rules
+
+Separate:
+
+- Facts
+- Assumptions
+- Unknowns
+- Opinions
+
+Never present assumptions as facts.
+
+### Coding Rules
+
+Prefer:
+
+- Readable code
+- Maintainable code
+- Correct code
+- Reusable code
+- Optimized code
+
+### MASTER → ROUTER Relationship
+
+MASTER is the always-on root orchestrator. Every task passes through MASTER first.
+
+MASTER's responsibilities include understanding the objective, breaking tasks into phases, and selecting the appropriate Skills.
+
+ROUTER is invoked by MASTER when skill selection or multi-skill coordination is needed. ROUTER selects and coordinates the smallest relevant set of Skills for a task.
+
+When a task is simple and a single Skill clearly applies, MASTER may activate that Skill directly.
+
+When a task spans multiple technical areas or the correct workflow is not obvious, MASTER activates ROUTER to select and coordinate the appropriate Skills.
+
+## Examples
+
+### Routing Examples
 
 React application
 
@@ -116,59 +177,19 @@ SECURITY.skill.md
 
 REVIEW.skill.md
 
-# MASTER → ROUTER Relationship
+### Example 1
 
-MASTER is the always-on root orchestrator. Every task passes through MASTER first.
+**User:** Build a React application.
 
-MASTER's responsibilities include understanding the objective, breaking tasks into phases, and selecting the appropriate Skills.
+**Activated Skills:**
 
-ROUTER is invoked by MASTER when skill selection or multi-skill coordination is needed. ROUTER selects and coordinates the smallest relevant set of Skills for a task.
+- ROUTER
+- RESEARCH
+- REVIEW
 
-When a task is simple and a single Skill clearly applies, MASTER may activate that Skill directly.
+## Validation
 
-When a task spans multiple technical areas or the correct workflow is not obvious, MASTER activates ROUTER to select and coordinate the appropriate Skills.
-
-# Thinking Process
-
-Before answering ask internally:
-
-- What does the user actually want?
-- What assumptions exist?
-- What information is missing?
-- Can this answer be improved?
-- Which Skills should be activated?
-
-# Large Tasks
-
-If the task is large:
-
-- Split it into phases.
-- Each phase should have one objective.
-- Produce one deliverable.
-- Be independently verifiable.
-
-# Research Rules
-
-Separate:
-
-- Facts
-- Assumptions
-- Unknowns
-- Opinions
-
-Never present assumptions as facts.
-
-# Coding Rules
-
-Prefer:
-
-- Readable code
-- Maintainable code
-- Correct code
-- Reusable code
-- Optimized code
-
-# Review Checklist
+### Review Checklist
 
 Before finishing verify:
 
@@ -181,7 +202,13 @@ Before finishing verify:
 - No hallucinations
 - Practical
 
-# Failure Handling
+For a detailed review of correctness, defects, and security, delegate to REVIEW.skill.md.
+
+For a structured quality assessment across multiple dimensions, delegate to QUALITY.skill.md.
+
+For final verification that the result satisfies the original requirements, delegate to VALIDATION.skill.md.
+
+### Failure Handling
 
 If required information is missing:
 
@@ -189,39 +216,12 @@ If required information is missing:
 - Explain why it matters.
 - Continue as far as possible without inventing facts.
 
-# Activation
-
-Always activate before any other Skill.
-
-# Workflow
-
-1. Understand the request.
-2. Classify the task.
-3. Select the required Skills.
-4. Execute the Skills.
-5. Review the result.
-6. Deliver the final answer.
-
-# Examples
-
-## Example 1
-
-**User:** Build a React application.
-
-**Activated Skills:**
-
-- ROUTER
-- RESEARCH
-- REVIEW
-
-# Validation
-
 - Objective achieved
 - Correct Skill selected
 - Output reviewed
 - No hallucinations
 
-# Related Skills
+## Related Skills
 
 - ROUTER.skill.md
 - THINKING.skill.md
@@ -231,5 +231,3 @@ Always activate before any other Skill.
 - REVIEW.skill.md
 - DOCUMENTATION.skill.md
 - SECURITY.skill.md
-
-End of Skill.

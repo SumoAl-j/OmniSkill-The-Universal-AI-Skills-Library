@@ -65,17 +65,19 @@ Check for:
 
 Do not ignore explicit constraints.
 
-### 3. Identify the Options
+### 3. Identify the Alternatives
 
-List the realistic options available.
+List the realistic alternatives available.
 
 Do not create artificial alternatives merely to make one option appear better.
 
-Remove options that clearly violate mandatory requirements.
+Remove alternatives that clearly violate mandatory requirements.
+
+If the alternatives are not yet known, or the reasoning needed to derive them is not complete, use THINKING first to reach the point where meaningful alternatives exist.
 
 ### 4. Define Decision Criteria
 
-Evaluate options using criteria relevant to the objective.
+Evaluate alternatives using criteria relevant to the objective.
 
 Common criteria include:
 
@@ -92,9 +94,9 @@ Common criteria include:
 
 Not every criterion is equally important.
 
-### 5. Compare the Options
+### 5. Compare the Alternatives
 
-Compare each realistic option against the decision criteria.
+Compare each realistic alternative against the decision criteria.
 
 Separate:
 
@@ -108,7 +110,7 @@ Do not present assumptions as verified facts.
 
 ### 6. Evaluate Risks and Trade-offs
 
-For each important option identify:
+For each important alternative identify:
 
 - Main advantages
 - Main disadvantages
@@ -121,11 +123,11 @@ For each important option identify:
 
 Consider both short-term and long-term consequences.
 
-### 7. Select the Best Option
+### 7. Select the Best Alternative
 
-Choose the option that best satisfies the objective and constraints.
+Choose the alternative that best satisfies the objective and constraints.
 
-Do not choose an option merely because:
+Do not choose an alternative merely because:
 
 - It is newer.
 - It is more popular.
@@ -139,11 +141,11 @@ The recommendation must be supported by the decision criteria.
 
 Provide:
 
-- Recommended option
+- Recommended alternative
 - Why it is recommended
 - Important trade-offs
 - Main risks
-- Conditions under which another option would be better
+- Conditions under which another alternative would be better
 
 Keep the conclusion clear and actionable.
 
@@ -151,7 +153,7 @@ Keep the conclusion clear and actionable.
 
 A decision should lead to an actionable next step.
 
-State what should happen next when appropriate.
+State what should happen next when appropriate. If the next action requires implementation, pass it to CODING or the appropriate implementation skill.
 
 ## Examples
 

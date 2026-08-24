@@ -100,21 +100,22 @@ Prefer direct evidence over speculation.
 
 ### 6. Consider Alternatives
 
-When multiple solutions exist:
+When multiple solutions may exist, identify realistic alternatives. For each, compare advantages, disadvantages, risks, and trade-offs. Use this reasoning to narrow the field. Do not create unnecessary alternatives.
 
-- Identify realistic alternatives.
-- Compare their advantages.
-- Compare their disadvantages.
-- Consider risks and trade-offs.
-- Select the option that best fits the objective.
-
-Do not create unnecessary alternatives.
+This step is about reasoning toward the most promising option. When the alternatives are already known and the goal is to choose between them, use DECISION for the structured trade-off analysis and next-action definition.
 
 ### 7. Reach a Conclusion
 
 The conclusion should follow from the available evidence and reasoning.
 
 If the evidence is insufficient, explicitly state the uncertainty rather than inventing an answer.
+
+A conclusion may be:
+
+- A determined answer.
+- A ranked set of likely explanations.
+- A recommended direction supported by reasoning.
+- An explicit statement that more information is needed.
 
 ### 8. Choose the Next Action
 
@@ -127,14 +128,7 @@ The next action should:
 - Resolve a blocker.
 - Move the task toward completion.
 
-### 9. Re-evaluate When New Evidence Appears
-
-If new information contradicts the current conclusion:
-
-1. Reassess the assumptions.
-2. Update the reasoning.
-3. Replace the previous conclusion if necessary.
-4. Do not defend an incorrect conclusion merely because it was previously stated.
+If the conclusion is a choice between known alternatives, pass the alternatives and the reasoning to DECISION to evaluate trade-offs and define the next action.
 
 ## Examples
 
