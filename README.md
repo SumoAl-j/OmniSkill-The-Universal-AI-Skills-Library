@@ -2,7 +2,7 @@
 
 ## Categories
 
-- core (24)
+- core (25)
 
 ## core
 
@@ -21,6 +21,7 @@
 - api
 - architecture
 - coding
+- configuration
 - database
 - deployment
 - error_handling
