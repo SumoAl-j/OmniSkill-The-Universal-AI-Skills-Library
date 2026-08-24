@@ -2,7 +2,7 @@
 
 ## Categories
 
-- core (29)
+- core (30)
 
 ## core
 
@@ -30,6 +30,7 @@
 - git
 - observability
 - performance
+- refactoring
 - reliability
 - scalability
 - security
