@@ -2,7 +2,7 @@
 
 ## Categories
 
-- core (17)
+- core (20)
 
 ## core
 
@@ -18,8 +18,11 @@
 - ROUTER
 - THINKING
 - VALIDATION
+- api
 - architecture
 - coding
+- database
+- deployment
 - git
 - security
 - testing
