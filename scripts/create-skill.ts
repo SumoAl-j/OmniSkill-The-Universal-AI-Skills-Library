@@ -61,7 +61,7 @@ async function main() {
 
   const content = `---
 name: ${skillName}
-version: 0.1.0
+version: 1.0.0
 category: ${category}
 priority: normal
 compatible:
@@ -75,31 +75,31 @@ compatible:
 
 # Objective
 
-Describe the purpose of this Skill.
+Describe the purpose of this Skill and when it adds value.
 
 # Activation
 
-When should this Skill be activated?
+List the conditions that should trigger this Skill.
 
 # Workflow
 
-1.
-2.
-3.
+1. First step description
+2. Second step description
+3. Continue with the remaining steps
 
 # Examples
 
 ## Example 1
 
-...
+<situation> → <what the Skill should do>
 
 # Validation
 
-- [ ]
+- [ ] <what must be verified>
 
 # Related Skills
 
--
+- <related-skill>.skill.md
 `;
 
   fs.writeFileSync(filePath, content, "utf8");

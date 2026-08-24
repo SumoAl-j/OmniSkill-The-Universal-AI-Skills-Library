@@ -2,11 +2,6 @@
   "name": "omniskill-the-universal-ai-skills-library",
   "version": "1.0.0",
   "description": "Universal AI Skills Library for ChatGPT, Claude, Gemini, Cursor, Copilot and AI Agents.",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs",
-    "example": "examples"
-  },
   "scripts": {
     "create": "tsx scripts/create-skill.ts",
     "validate": "tsx scripts/validate-skills.ts",
