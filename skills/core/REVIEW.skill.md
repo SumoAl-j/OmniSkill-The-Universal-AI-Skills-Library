@@ -3,6 +3,7 @@ name: REVIEW
 version: 1.0.0
 category: core
 priority: high
+group: Quality & Review
 alwaysApply: false
 compatible:
   - ChatGPT
@@ -167,6 +168,8 @@ When possible:
 - Reproduce important issues.
 
 Clearly distinguish verified findings from theoretical concerns.
+
+When the review reveals a security concern beyond what a general review can fully assess, pass it to SECURITY for deeper security analysis. When the review is part of a task that also requires final confirmation against requirements, pass the result to VALIDATION to confirm the original requirements are satisfied.
 
 ## Examples
 

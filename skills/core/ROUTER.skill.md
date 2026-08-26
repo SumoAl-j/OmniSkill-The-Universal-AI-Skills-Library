@@ -3,6 +3,7 @@ name: ROUTER
 version: 1.0.0
 category: core
 priority: high
+group: Orchestration
 alwaysApply: false
 compatible:
   - ChatGPT
@@ -61,6 +62,7 @@ Typical mappings include:
 - Documentation work → DOCUMENTATION
 - Quality assessment → QUALITY
 - Code or implementation review → REVIEW
+- Security-sensitive task → SECURITY
 - Final correctness checks → VALIDATION
 
 ### 3. Select the Primary Skill
@@ -118,7 +120,7 @@ If the task changes or new evidence appears:
 - Activate a more appropriate Skill when necessary.
 - Deactivate irrelevant Skills.
 
-Do not continue using an inappropriate workflow merely because it was selected earlier.
+Deactivation is the orchestrator's responsibility. If a previously activated Skill is no longer relevant, stop using it rather than letting it continue to shape the workflow. Do not continue using an inappropriate workflow merely because it was selected earlier.
 
 ### 7. Avoid Conflicting Instructions
 
@@ -172,6 +174,8 @@ Supporting Skills are added only when they materially improve the result:
 
 A complex feature does not automatically require all seven Skill types. Simple or well-understood features may need only CODING and VALIDATION. ROUTER's job is to select the smallest set that safely satisfies the task.
 
+Note: The sequence above is a task-specific example for a complex feature, not a fixed template. THINKING and DECISION move earlier, later, or are skipped entirely depending on the task. If the implementation approach is already clear, THINKING may be skipped. If the alternatives are already known before planning, DECISION may come before PLANNING. ROUTER should choose the order that matches the actual task, not copy this example verbatim.
+
 ### Example 3 — Comparing Technologies
 
 A user asks which technology should be used.
@@ -179,8 +183,10 @@ A user asks which technology should be used.
 ROUTER should select:
 
 1. RESEARCH for current technical evidence.
-2. DECISION for comparison and recommendation.
-3. THINKING for complex reasoning when necessary.
+2. THINKING to reason through the implications, constraints, and trade-offs before committing to a choice.
+3. DECISION to evaluate the known alternatives and make a recommendation.
+
+Reasoning should precede the decision, not follow it. When the alternatives and their implications are not yet clear, use THINKING first so the decision is based on analyzed evidence rather than on the first plausible option.
 
 ### Example 4 — Documentation Update
 

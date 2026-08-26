@@ -3,6 +3,7 @@ name: MASTER
 version: 1.0.0
 category: core
 priority: critical
+group: Orchestration
 alwaysApply: true
 
 compatible:
@@ -177,15 +178,13 @@ SECURITY.skill.md
 
 REVIEW.skill.md
 
-### Example 1
+### Example 1 — Planning a React Application
 
-**User:** Build a React application.
+User wants to understand the approach for building a React application before implementation.
 
-**Activated Skills:**
+MASTER activates or delegates ROUTER. ROUTER is used to select and coordinate the appropriate skills for planning the application, including research on React best practices and review of the planned approach.
 
-- ROUTER
-- RESEARCH
-- REVIEW
+This example demonstrates MASTER delegating a multi-skill planning task to ROUTER, not implementing the application.
 
 ## Validation
 

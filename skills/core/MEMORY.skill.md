@@ -3,6 +3,7 @@ name: MEMORY
 version: 1.0.0
 category: core
 priority: high
+group: Memory
 alwaysApply: false
 compatible:
   - ChatGPT

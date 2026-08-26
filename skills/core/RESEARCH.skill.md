@@ -3,6 +3,7 @@ name: RESEARCH
 version: 1.0.0
 category: core
 priority: high
+group: Reasoning
 alwaysApply: false
 compatible:
   - ChatGPT
@@ -124,7 +125,7 @@ When research supports a decision or implementation:
 - Explain the relevant conclusion.
 - Identify important trade-offs.
 - State assumptions.
-- Recommend the next action when appropriate.
+- Recommend the next action by activating THINKING for further reasoning or DECISION for structured choice between known alternatives, rather than leaving the next step implicit.
 
 ### 9. Preserve Research Quality
 

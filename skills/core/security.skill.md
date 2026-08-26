@@ -3,6 +3,7 @@ name: SECURITY
 version: 1.0.0
 category: core
 priority: critical
+group: Security
 alwaysApply: false
 compatible:
   - ChatGPT

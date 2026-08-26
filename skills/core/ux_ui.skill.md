@@ -3,6 +3,7 @@ name: UX_UI
 version: 1.0.0
 category: core
 priority: high
+group: User Experience
 alwaysApply: false
 compatible:
   - ChatGPT

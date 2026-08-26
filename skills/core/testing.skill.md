@@ -3,6 +3,7 @@ name: TESTING
 version: 1.0.0
 category: core
 priority: high
+group: Testing
 alwaysApply: false
 compatible:
   - ChatGPT

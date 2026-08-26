@@ -3,6 +3,7 @@ name: VALIDATION
 version: 1.0.0
 category: core
 priority: critical
+group: Quality & Review
 alwaysApply: true
 compatible:
   - ChatGPT
@@ -33,6 +34,8 @@ Activate VALIDATION when:
 - A release or milestone needs final verification.
 - The user asks whether something is working correctly.
 - Previous work needs confirmation.
+
+Note: VALIDATION has alwaysApply: true, which means it is always available to be activated — it does not mean VALIDATION should run at every step. Activation still depends on the task being at a point where verification is appropriate. Do not run VALIDATION before the work is sufficiently complete to verify.
 
 ## Workflow
 
@@ -73,7 +76,7 @@ Use checks relevant to the task, such as:
 - Health checks
 - Manual verification
 
-Do not run unrelated checks merely for appearance.
+The checks listed above are examples scoped to OmniSkill tasks. For a non-OmniSkill task, validation checks should be chosen based on what is appropriate for the specific work — such as running the project's existing test suite, checking logs, or performing a manual smoke test. Do not run unrelated checks merely for appearance.
 
 ### 4. Verify Expected Behavior
 
@@ -193,6 +196,7 @@ Before completing a validation task, verify:
 - [ ] Verification status is accurately reported.
 - [ ] Known limitations are documented.
 - [ ] No failed check was silently ignored.
+- [ ] Assumptions are supported by evidence or explicitly flagged as uncertain.
 - [ ] The final result satisfies the required success criteria.
 
 ## Related Skills

@@ -3,6 +3,7 @@ name: PLANNING
 version: 1.0.0
 category: core
 priority: high
+group: Orchestration
 alwaysApply: false
 compatible:
   - ChatGPT

@@ -3,6 +3,7 @@ name: THINKING
 version: 1.0.0
 category: core
 priority: high
+group: Reasoning
 alwaysApply: false
 compatible:
   - ChatGPT
@@ -100,7 +101,7 @@ Prefer direct evidence over speculation.
 
 ### 6. Consider Alternatives
 
-When multiple solutions may exist, identify realistic alternatives. For each, compare advantages, disadvantages, risks, and trade-offs. Use this reasoning to narrow the field. Do not create unnecessary alternatives.
+When multiple solutions may exist, identify realistic alternatives. For each, briefly identify advantages, disadvantages, risks, and trade-offs to narrow the field. Do not create unnecessary alternatives. Do not perform the full structured trade-off analysis that DECISION uses — that is DECISION's responsibility when the goal is to choose between known alternatives.
 
 This step is about reasoning toward the most promising option. When the alternatives are already known and the goal is to choose between them, use DECISION for the structured trade-off analysis and next-action definition.
 
@@ -147,15 +148,17 @@ THINKING should:
 
 ### Example 2 — Technical Decision
 
-Two implementation approaches are available.
+Two implementation approaches are available and the alternatives are already known.
 
 THINKING should:
 
 1. Identify the actual objective.
 2. Identify constraints.
-3. Compare both approaches.
-4. Evaluate risks and trade-offs.
-5. Select the approach that best satisfies the requirements.
+3. Compare both approaches at a high level to confirm they are genuinely viable.
+4. Evaluate the main risks and trade-offs at a reasoning level.
+5. Pass the alternatives and the reasoning to DECISION to evaluate trade-offs and select the approach that best satisfies the requirements.
+
+Do not select between known alternatives in THINKING. When the alternatives are known and the goal is to choose between them, use DECISION.
 
 ### Example 3 — Incomplete Information
 
@@ -184,6 +187,7 @@ Before completing a reasoning task, verify:
 - [ ] The conclusion follows from the available evidence.
 - [ ] The next action is practical and relevant.
 - [ ] New evidence can update the conclusion.
+- [ ] Full trade-off analysis was not performed. When the goal is to choose between known alternatives, hand off to DECISION rather than duplicating DECISION's analysis.
 
 ## Related Skills
 

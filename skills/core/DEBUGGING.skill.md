@@ -3,6 +3,7 @@ name: DEBUGGING
 version: 1.0.0
 category: core
 priority: high
+group: Quality & Review
 alwaysApply: false
 compatible:
   - ChatGPT

@@ -3,6 +3,7 @@ name: RELIABILITY
 version: 1.0.0
 category: core
 priority: critical
+group: Reliability & Operations
 alwaysApply: false
 compatible:
   - ChatGPT

@@ -3,6 +3,7 @@ name: DATABASE
 version: 1.0.0
 category: core
 priority: high
+group: Implementation
 alwaysApply: false
 compatible:
   - ChatGPT

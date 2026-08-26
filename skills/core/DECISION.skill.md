@@ -3,6 +3,7 @@ name: DECISION
 version: 1.0.0
 category: core
 priority: high
+group: Reasoning
 alwaysApply: false
 compatible:
   - ChatGPT
@@ -92,7 +93,7 @@ Common criteria include:
 9. Development speed
 10. Long-term risk
 
-Not every criterion is equally important.
+Not every criterion is equally important. Select the criteria that matter most for the specific objective and constraints of the task, and weigh the alternatives against those primary criteria first before considering secondary factors.
 
 ### 5. Compare the Alternatives
 

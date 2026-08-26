@@ -3,6 +3,7 @@ name: CONFIGURATION
 version: 1.0.0
 category: core
 priority: high
+group: Reliability & Operations
 alwaysApply: false
 compatible:
   - ChatGPT
