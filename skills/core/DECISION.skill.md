@@ -76,6 +76,8 @@ Remove alternatives that clearly violate mandatory requirements.
 
 If the alternatives are not yet known, or the reasoning needed to derive them is not complete, use THINKING first to reach the point where meaningful alternatives exist.
 
+A handoff to THINKING should request specific reasoning — what alternatives are plausible, what infor...[truncated]
+
 ### 4. Define Decision Criteria
 
 Evaluate alternatives using criteria relevant to the objective.
@@ -94,6 +96,17 @@ Common criteria include:
 10. Long-term risk
 
 Not every criterion is equally important. Select the criteria that matter most for the specific objective and constraints of the task, and weigh the alternatives against those primary criteria first before considering secondary factors.
+
+Practical prioritization:
+
+1. State the primary objective in one sentence. What outcome matters most for this decision?
+2. Identify the binding constraints — requirements that an alternative must satisfy for it to remain viable.
+3. Classify each relevant criterion as primary (directly serves the objective or reflects a binding constraint), secondary (desirable but not essential), or not applicable (irrelevant to this specific decision).
+4. Give primary criteria the greatest influence on the decision. Use secondary criteria mainly to break ties or to refine a choice between options that already satisfy the primary criteria.
+5. Do not sacrifice a primary criterion or binding constraint for a secondary benefit. A desirable feature should not outweigh a failure on the objective that matters most.
+6. If no criterion clearly dominates, state the trade-off explicitly rather than presenting the decision as objectively obvious. Recommend the option that best fits the stated objective while preserving important future flexibility where appropriate.
+
+Apply this framework proportionally to the complexity and consequence of the decision. A low-stakes choice does not require an elaborate written analysis; a high-stakes architectural choice does.
 
 ### 5. Compare the Alternatives
 
