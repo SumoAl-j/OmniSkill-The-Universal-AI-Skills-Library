@@ -104,7 +104,7 @@ When relevant, inspect:
 - Dependency risks
 - Information leakage
 
-Do not recommend weakening security controls.
+For security concerns that exceed the scope of a general review, delegate to SECURITY.skill.md for deeper security analysis.
 
 ### 6. Check Maintainability
 

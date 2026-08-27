@@ -106,7 +106,7 @@ When relevant, evaluate:
 - Data exposure
 - Error information leakage
 
-Do not recommend weakening security for convenience.
+For issues that exceed the scope of a general quality assessment, delegate to SECURITY.skill.md for deeper security analysis.
 
 ### 6. Check Verification
 
