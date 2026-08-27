@@ -62,6 +62,8 @@ Classify information as:
 
 Do not treat assumptions as facts.
 
+For a compatible fact/assumption classification framework, see RESEARCH.skill.md Workflow step 6.
+
 ### 3. Decompose the Problem
 
 Break complex problems into smaller parts.
