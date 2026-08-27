@@ -131,6 +131,8 @@ The next action should:
 
 If the conclusion is a choice between known alternatives, pass the alternatives and the reasoning to DECISION to evaluate trade-offs and define the next action.
 
+A handoff to DECISION should narrow the field and reduce ambiguity. If DECISION returns the task to THINKING, the reasoning should have progressed — new information, a clearer constr...[truncated]
+
 ## Examples
 
 ### Example 1 — Debugging
