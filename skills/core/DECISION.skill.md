@@ -74,7 +74,7 @@ Do not create artificial alternatives merely to make one option appear better.
 
 Remove alternatives that clearly violate mandatory requirements.
 
-If the alternatives are not yet known, or the reasoning needed to derive them is not complete, use THINKING first to reach the point where meaningful alternatives exist.
+If the alternatives are not yet known, or the reasoning needed to derive them is not complete, hand the task back to THINKING. When THINKING hands back to DECISION, the reasoning should have progressed — new information, a clearer constraint, or a better-framed question. If the handoff returns to DECISION without progress, the task is not ready for decision and THINKING needs to dig deeper before alternatives can be meaningfully compared.
 
 A handoff to THINKING should request specific reasoning — what alternatives are plausible, what infor...[truncated]
 

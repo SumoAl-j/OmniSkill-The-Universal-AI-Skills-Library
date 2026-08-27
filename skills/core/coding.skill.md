@@ -51,6 +51,13 @@ Identify:
 
 Do not start coding before understanding the required behavior.
 
+When modifying an existing repository, first check:
+- The current branch is the intended one for the changes.
+- The working tree does not contain uncommitted changes that may conflict with the planned modifications.
+- The changes to be made belong on this branch, not on a different branch or an unexpected context.
+
+This is especially important before making changes that create commits, modify shared files, or alter repository state.
+
 ### 2. Inspect the Existing Code
 
 When working in an existing project, inspect:
