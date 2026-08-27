@@ -90,6 +90,29 @@ Before answering ask internally:
 - Can this answer be improved?
 - Which Skills should be activated?
 
+### Pre-Action Safety Check
+
+Before executing the selected Skills, review the planned actions for destructive operations.
+
+Classify each planned operation by risk:
+
+- **Tier 1 — destructive, irreversible, or high-impact on production, shared branches, or real data.**
+  State the operation, what will be lost or changed, that it cannot be undone, and the target environment.
+  Block execution until the user explicitly confirms. A simple affirmative is sufficient.
+  If the user refuses, do not perform that operation. Offer a safer alternative when possible.
+
+- **Tier 2 — risky but normally reversible.**
+  Issue a warning stating what will be modified and the potential impact. Do not block execution and do not wait for confirmation.
+
+- **Tier 3 — safe, additive, or read-only.**
+  No warning, no confirmation. Proceed.
+
+Determine the tier from the operation, the target, the environment, and whether the change is reversible.
+When the environment is ambiguous or unknown, choose the more conservative classification for that actual operation: a potentially risky reversible change becomes a Tier 2 warning, while a potentially irreversible or destructive change becomes a Tier 1 confirmation.
+Do not escalate an ordinary low-risk change to Tier 1 solely because the environment is unknown.
+This is a plan-level check. Individual skills may also apply their own execution-level checks.
+This does not replace REVIEW or VALIDATION, which verify the result after execution.
+
 ### Large Tasks
 
 If the task is large:

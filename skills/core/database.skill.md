@@ -151,6 +151,9 @@ Before changing a production schema:
 2. Check compatibility.
 3. Consider backward compatibility.
 4. Avoid destructive changes without a migration strategy.
+   Destructive operations such as DROP TABLE, DELETE without a WHERE clause, or schema changes that would lose data require the pre-action safety check from MASTER.
+   For production or real data, do not proceed until the user explicitly confirms.
+   Verify what data will be lost and whether a backup or rollback path exists.
 5. Test the migration.
 6. Consider rollback or recovery.
 7. Verify the resulting schema.

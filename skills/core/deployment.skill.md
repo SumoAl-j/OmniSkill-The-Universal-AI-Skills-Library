@@ -131,6 +131,8 @@ When deployment includes database changes:
 
 Avoid destructive production migrations without a safe migration strategy.
 
+The pre-action safety check from MASTER applies to destructive production migrations. State the deployment scope, the environments affected, and any destructive migrations included. For destructive production changes, do not proceed until the user explicitly confirms.
+
 ### 7. Build Reproducibly
 
 The deployment should be reproducible from the project's declared configuration.

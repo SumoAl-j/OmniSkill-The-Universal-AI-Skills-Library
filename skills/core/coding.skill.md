@@ -104,6 +104,8 @@ Avoid:
 - Over-engineering
 - Unrelated changes
 
+Modifying existing code is not automatically risky. Classify the change by actual risk, not by whether a file is modified. Changes to production behavior, security logic, data handling, or public contracts without tests or review should trigger the pre-action safety check from MASTER. Purely additive changes, well-tested modifications, and changes in disposable environments may not require a warning. Deleting or overwriting existing functionality without a recovery path is a Tier 1 or Tier 2 operation depending on context.
+
 ### 5. Handle Errors Correctly
 
 Code should:
