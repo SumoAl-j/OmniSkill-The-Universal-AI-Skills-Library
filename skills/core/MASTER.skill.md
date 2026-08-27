@@ -211,24 +211,37 @@ This example demonstrates MASTER delegating a multi-skill planning task to ROUTE
 
 ## Validation
 
-### Review Checklist
+### Orchestrator-Level Verification
 
-Before finishing verify:
+At workflow step 5 (Review the result), MASTER verifies at the orchestration level:
 
-- Objective achieved
-- Technically correct
-- Secure
-- Easy to understand
-- Edge cases considered
-- Good structure
-- No hallucinations
-- Practical
+- Correct Skills were selected and activated for the task.
+- The objective was achieved.
+- The result was reviewed at the orchestration level for obvious issues.
+- The result has no hallucinations.
+- The result is understandable and practical.
+- Edge cases were considered.
 
-For a detailed review of correctness, defects, and security, delegate to REVIEW.skill.md.
+These are orchestration-level checks. They confirm that the overall task was handled correctly and that nothing obvious was missed. They are not a substitute for detailed verification.
 
-For a structured quality assessment across multiple dimensions, delegate to QUALITY.skill.md.
+### Delegated Verification
 
-For final verification that the result satisfies the original requirements, delegate to VALIDATION.skill.md.
+For verification beyond the orchestration level, MASTER delegates to specialized skills:
+
+- For a detailed review of correctness, defects, and security, delegate to REVIEW.skill.md.
+- For a structured quality assessment across multiple dimensions, delegate to QUALITY.skill.md.
+- For final verification that the result satisfies the original requirements, delegate to VALIDATION.skill.md.
+
+### Post-Action Verification Model
+
+Post-action verification follows this general model:
+
+1. Each activated skill performs its own self-verification (the Validation section in that skill).
+2. REVIEW, QUALITY, or VALIDATION are activated when their triggers apply.
+3. MASTER reviews the result at the orchestration level (workflow step 5).
+4. The final answer is delivered.
+
+This does not replace REVIEW or VALIDATION, which verify the result in detail.
 
 ### Failure Handling
 

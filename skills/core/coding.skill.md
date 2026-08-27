@@ -173,6 +173,8 @@ Check:
 
 Keep the final implementation focused on the original requirement.
 
+For significant changes, complex implementations, or changes with security or correctness risk, also consider activating REVIEW.skill.md for an independent review. After the change is complete, VALIDATION.skill.md can confirm the result satisfies the original requirements. Passing automated checks (step 8) is evidence, not proof — manual review and independent verification remain important.
+
 ## Examples
 
 ### Example 1 — Add a Function
