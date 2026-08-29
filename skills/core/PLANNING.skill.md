@@ -98,13 +98,13 @@ Group related tasks when doing so reduces unnecessary context switching.
 
 ### 6. Define Verification
 
-For important tasks, define how completion will be verified.
+For important tasks, define how completion will be verified. For tasks that will be implemented, also consider VALIDATION.skill.md for final verification.
 
 Examples:
 
 - Tests pass.
 - Build succeeds.
-- Validation succeeds.
+- VALIDATION.skill.md confirms the result.
 - Lint succeeds.
 - Feature works as expected.
 - Required files exist.
@@ -116,7 +116,7 @@ Consider:
 
 - Technical blockers
 - Dependency conflicts
-- Security risks
+- Security risks — for significant security risks, also activate SECURITY.skill.md
 - Compatibility problems
 - Scope creep
 - Missing requirements

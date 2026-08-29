@@ -219,6 +219,7 @@ Before completing a quality task, verify:
 - MASTER.skill.md
 - REVIEW.skill.md
 - VALIDATION.skill.md
+- SECURITY.skill.md
 - DEBUGGING.skill.md
 - THINKING.skill.md
 - DECISION.skill.md

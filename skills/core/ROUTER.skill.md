@@ -228,6 +228,7 @@ When multiple Skills could apply, confirm that the chosen primary Skill best add
 - DECISION.skill.md
 - DEBUGGING.skill.md
 - REVIEW.skill.md
+- SECURITY.skill.md
 - QUALITY.skill.md
 - DOCUMENTATION.skill.md
 - VALIDATION.skill.md

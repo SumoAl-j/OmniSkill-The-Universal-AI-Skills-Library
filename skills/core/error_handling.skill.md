@@ -414,4 +414,5 @@ Before completing an error-handling task, verify:
 - QUALITY.skill.md
 - REVIEW.skill.md
 - VALIDATION.skill.md
+- SECURITY.skill.md
 - DOCUMENTATION.skill.md

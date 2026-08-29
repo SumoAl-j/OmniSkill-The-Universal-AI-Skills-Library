@@ -211,6 +211,6 @@ Before completing a validation task, verify:
 - RESEARCH.skill.md
 - PLANNING.skill.md
 - DOCUMENTATION.skill.md
+- SECURITY.skill.md
 - DECISION.skill.md
 - ROUTER.skill.md
-- SECURITY.skill.md

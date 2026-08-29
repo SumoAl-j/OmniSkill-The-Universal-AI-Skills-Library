@@ -162,6 +162,7 @@ Before completing a memory-related task, verify:
 - THINKING.skill.md
 - DECISION.skill.md
 - RESEARCH.skill.md
+- SECURITY.skill.md
 - DOCUMENTATION.skill.md
 - REVIEW.skill.md
 - VALIDATION.skill.md

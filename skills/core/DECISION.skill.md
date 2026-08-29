@@ -131,7 +131,7 @@ For each important alternative identify:
 - Main advantages
 - Main disadvantages
 - Technical risks
-- Security risks
+- Security risks — for significant security implications, also activate SECURITY.skill.md
 - Maintenance costs
 - Migration costs
 - Opportunity costs
@@ -245,3 +245,4 @@ Before completing a decision task, verify:
 - QUALITY.skill.md
 - REVIEW.skill.md
 - VALIDATION.skill.md
+- SECURITY.skill.md

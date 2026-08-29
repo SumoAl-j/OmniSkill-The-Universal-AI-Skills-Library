@@ -22,6 +22,8 @@ Manage Git repositories safely and systematically, including changes, commits, b
 
 GIT should preserve repository integrity and avoid destructive operations unless explicitly required and understood.
 
+Before any destructive or consequential Git operation — including force push, history rewriting, branch deletion, rebase, reset, or clean — review the planned operation against the pre-action safety check from MASTER.skill.md. Classify the operation by risk and apply the appropriate tier. Force-push, history rewriting, and deletion of published branches are typically Tier 1 or Tier 2 operations depending on context and reversibility. Verify the current branch and remote state before pushing changes. Do not push to the wrong remote or branch.
+
 ## Activation
 
 Activate GIT when:
