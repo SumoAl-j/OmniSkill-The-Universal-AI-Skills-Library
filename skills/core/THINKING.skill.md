@@ -164,6 +164,8 @@ THINKING should:
 
 Do not select between known alternatives in THINKING. When the alternatives are known and the goal is to choose between them, use DECISION.
 
+If the question is "why is this failing?" and the answer requires hands-on investigation — reading logs, reproducing the failure, inspecting state — use DEBUGGING.skill.md instead. THINKING is for reasoning about causes and options; DEBUGGING is for identifying root causes and fixing them. If the boundary is unclear, reason first (THINKING) and then investigate (DEBUGGING).
+
 ### Example 3 — Incomplete Information
 
 A user asks a question without enough information to verify the answer.

@@ -197,7 +197,7 @@ When configuration changes:
 
 Configuration changes can affect runtime behavior even when application code does not change.
 
-Changing production configuration — or configuration that affects security settings, database connections, authentication, secrets, or runtime behavior in production — triggers the pre-action safety check from MASTER. Determine the environment and the impact of the change. If the environment is ambiguous, treat it as production.
+Changing production configuration — or configuration that affects security settings, database connections, authentication, secrets, or runtime behavior in production or staging environments that mirror production security settings — triggers the pre-action safety check from MASTER. Determine the environment and the impact of the change. If the environment is ambiguous, treat it as production.
 
 ### 12. Review External Service Configuration
 

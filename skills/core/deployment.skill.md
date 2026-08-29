@@ -132,6 +132,7 @@ When deployment includes database changes:
 Avoid destructive production migrations without a safe migration strategy.
 
 The pre-action safety check from MASTER applies to destructive production migrations. State the deployment scope, the environments affected, and any destructive migrations included. For destructive production changes, do not proceed until the user explicitly confirms.
+When a deployment includes security-sensitive changes — authentication, authorization, access control, secrets, or encryption — also activate SECURITY.skill.md for deeper security review.
 
 ### 7. Build Reproducibly
 

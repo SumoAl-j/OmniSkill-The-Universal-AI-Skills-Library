@@ -130,6 +130,7 @@ When multiple Skills apply:
 - Use supporting Skills for their intended concerns.
 - Resolve conflicts using the highest-priority applicable instruction.
 - Avoid duplicating the same work across Skills.
+- When multiple Skills disagree on whether a task is complete, defer to VALIDATION if it is active. If VALIDATION is not active, pause and confirm with the user rather than letting one Skill override the disagreement. Completion disagreement is a signal to verify, not to resolve by preference.
 
 ### 8. Complete With Validation
 
@@ -138,6 +139,8 @@ Before considering the task complete:
 - Determine whether VALIDATION is required.
 - Activate VALIDATION when appropriate.
 - Confirm that the requested outcome was actually achieved.
+
+If the agent lacks sufficient information to confirm completion, do not treat uncertainty as success. Either obtain the missing information, restrict the completed portion to what is actually verified, or ask the user what level of confirmation is appropriate. When in doubt, trust the user's judgment about scope and completeness, and verify what can be verified.
 
 ## Examples
 

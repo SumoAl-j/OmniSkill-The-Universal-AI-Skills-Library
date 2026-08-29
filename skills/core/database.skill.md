@@ -154,6 +154,7 @@ Before changing a production schema:
    Destructive operations such as DROP TABLE, DELETE without a WHERE clause, or schema changes that would lose data require the pre-action safety check from MASTER.
    For production or real data, do not proceed until the user explicitly confirms.
    Verify what data will be lost and whether a backup or rollback path exists.
+   For changes that affect authentication, authorization, access control, or sensitive data handling, also activate SECURITY.skill.md for deeper security review.
 5. Test the migration.
 6. Consider rollback or recovery.
 7. Verify the resulting schema.

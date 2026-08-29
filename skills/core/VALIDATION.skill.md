@@ -138,6 +138,8 @@ Keep the report factual and concise.
 
 A task should only be considered complete when the required success criteria have been verified or the remaining limitations have been explicitly accepted.
 
+Both MASTER and ROUTER may determine that VALIDATION is appropriate — for example, after a multi-skill workflow completes, or when the user asks whether something is working correctly. VALIDATION verifies; it does not decide when work is finished. If the agent is unsure whether work is complete, it should ask for clarification rather than skipping validation.
+
 ## Examples
 
 ### Example 1 — Code Change
@@ -211,3 +213,4 @@ Before completing a validation task, verify:
 - DOCUMENTATION.skill.md
 - DECISION.skill.md
 - ROUTER.skill.md
+- SECURITY.skill.md
