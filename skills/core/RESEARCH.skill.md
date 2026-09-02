@@ -129,7 +129,7 @@ When research supports a decision or implementation:
 - Explain the relevant conclusion.
 - Identify important trade-offs.
 - State assumptions.
-- Recommend the next action. When research supports a decision between known alternatives, activate DECISION.skill.md. When research supports further reasoning, hypothesis exploration, or cause analysis, activate THINKING.skill.md. Do not leave the next step implicit.
+- Recommend the next action. When research supports a decision, activate DECISION. When research supports reasoning, activate THINKING. Do not leave the next step implicit.
 
 ### 9. Preserve Research Quality
 

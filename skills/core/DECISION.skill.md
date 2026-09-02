@@ -97,7 +97,7 @@ Common criteria include:
 9. Development speed
 10. Long-term risk
 
-Not every criterion is equally important. Select the criteria that matter most for the specific objective and constraints of the task, and weigh the alternatives against those primary criteria first before considering secondary factors.
+Not every criterion is equally important. Evaluation criteria should be weighted according to the primary objective and constraints of the task. Select the criteria that matter most for the specific objective and constraints of the task, and weigh the alternatives against those primary criteria first before considering secondary factors.
 
 Practical prioritization:
 
